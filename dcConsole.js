@@ -44,6 +44,7 @@ function debug(o) {
             o = o.replace("\",", "\",<br>&nbsp;&nbsp;&nbsp;&nbsp;");
         } catch (e) {}
     }
+
     var time = new Date();
     sessionStorage.log = time.toLocaleString() + '<br>' + o + '<hr>' + sessionStorage.log;
 }
